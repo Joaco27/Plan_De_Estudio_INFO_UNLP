@@ -1,3 +1,7 @@
+body{
+    background-image: url(./circuitos-fondo-digital-degradado-azul-rojo_23-2148821701.webp);
+}
+
 .anio>td{
     background-color: rgb(207, 105, 105);
 }
@@ -8,4 +12,13 @@ table,td{
 
 .semestre>td{
     background-color: lightcoral;
+}
+
+table{
+    background-color: aliceblue;
+}
+
+p{
+    font-size: x-large;
+    color: aliceblue;
 }
