@@ -1,0 +1,11 @@
+.anio>td{
+    background-color: rgb(207, 105, 105);
+}
+
+table,td{
+    border: 1px solid black;
+}
+
+.semestre>td{
+    background-color: lightcoral;
+}
