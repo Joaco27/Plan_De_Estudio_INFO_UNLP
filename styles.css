@@ -22,3 +22,9 @@ p{
     font-size: x-large;
     color: aliceblue;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
