@@ -36,7 +36,22 @@ function detallar(){
     let materia = document.getElementsByClassName(m)    //Fila de la materia
     materia = materia[0].getElementsByTagName("td")     //Columnas de la materia
 
+    //Traer correlativas de la materia
+    let correlativas = materia[2].innerHTML.split(',')
+    let ms = document.getElementsByTagName("tr")
+    let corr = "Correlativas:<br>"
+    for(let m of ms){
+        if  (!(m.classList.contains('semestre') || m.classList.contains('anio') || m.classList.contains('encabezado'))){
+            let column = m.getElementsByTagName("td")
+            if(correlativas.includes(column[1].innerHTML)){
+                corr += `${column[0].innerHTML}<br> `
+            }
+        }
+    }
+
+
     p.innerHTML = `Nombre de Materia: ${materia[0].innerHTML} <br> Codigo: ${materia[1].innerHTML} <br> 
-        Estado: ${materia[3].querySelector('select').value}`
+        Estado: ${materia[3].querySelector('select').value} <br> ${corr}`
 }
+
 
